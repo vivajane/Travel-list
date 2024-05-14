@@ -1,0 +1,70 @@
+.image{
+
+    display: flex;
+  justify-content: center;
+  /* margin-top: 10px; */
+  /* background-color: rgb(125, 180, 139); */
+    
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.content{
+    width: 1000px;
+    background-color: rgb(236, 214, 197);
+    margin: 20px auto;
+    padding: 20px auto;
+}
+.footer{
+    padding: 20px;
+    /* background-color: aqua; */
+}
+li span{
+    margin-right: 6px;
+}
+input, select, button{
+    padding: 8px 13px;
+    margin: 0 3px;
+    border-radius: 5px;
+    /* background: none; */
+    background-color: black;
+    color: white;
+}
+button:hover{
+    background-color: rgb(10, 9, 9);
+    color: white;
+}
+img{
+    height: 200px;
+    width: 100%;
+    /* margin: 10px auto; */
+
+}
+.packed{
+    text-decoration: line-through;
+}
+li{
+    /* background-color: blue; */
+    list-style-type: none;
+    /* width: 1600px; */
+    margin: 10px auto;
+}
+.spann{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+ul li{
+    background-color: antiquewhite;
+    padding: 5px 12px;
+    box-shadow: 5px 5px 10px 5px rgb(17, 15, 15);
+}
+button{
+    padding: 8px 13px;
+    margin-top: 5px;
+}
