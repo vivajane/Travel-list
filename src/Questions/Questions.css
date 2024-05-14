@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    width: 100%;
+  
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    font-weight: 700;
+    padding: 10px auto;
+    
+}
+.list{
+    background-color:rgb(242, 239, 235);
+    box-shadow: 15px 15px 15px 5px rgb(187, 172, 172);
+    margin-top: 10px;
+    padding: 30px;
+
+}
+.list > div{
+    text-align: center;
+    padding: 20px 0;
+    line-height: 25px;
+}
+li p:nth-child(2){
+    
+}
+ul{
+    width: 70%;
+    margin: 20px auto;
+}
+@media screen and (max-width:700px){
+    .list{
+        font-size: small;
+    }
+    
+}

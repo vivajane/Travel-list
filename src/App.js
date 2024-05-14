@@ -1,12 +1,18 @@
 
 import './App.css';
-
-import Home from './HomePage';
+import Accordion from './Questions/Questions';
+// import Question from './question/Question';
+// import Step from './step/Step';
+// import Home from './HomePage';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Accordion/>
+      {/* <Home/> */}
+      {/* <Step/> */}
+      {/* <Question/> */}
+   
     </div>
   );
 }
