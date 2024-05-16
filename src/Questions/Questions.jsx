@@ -30,13 +30,14 @@ const faqs = [
     },
 ]
 const Accordion = () => {
+    const[show, setShow] = useState(false)
     
   return (
     <div className="container">
         <ul>
             {
                 faqs.map((faq) => 
-                    <AccordionList key={faq.num} faq={faq} />
+                    <AccordionList key={faq.num} faq={faq} show = {show} setShow= {setShow} />
                 )
             }
             </ul>
@@ -46,19 +47,23 @@ const Accordion = () => {
 }
 
 export default Accordion;
-const AccordionList = function({faq}){
-    const[show, setShow] = useState(false)
+const AccordionList = function({faq,show,setShow}){
+    const num = faq.num;
+    const newShow = num === show;
+   
+    
 
     const toggleShow = () => {
-        setShow((show) => !show)
+        setShow(num);
+       
     }
     return <div className="list" onClick={toggleShow}>
-    <li>
+    <li className= {show && "active"}>
         <p>{faq.num <= 9 ? `0${faq.num}` : `${faq.num}`}</p>
         <p>{faq.questions}</p>
-        <div>{show ? "-" : "+"}</div>
+        <div>{newShow ? "-" : "+"}</div>
     </li>
-    <div>{show && `${faq.answer}` }</div>
+    <div>{newShow&& `${faq.answer}` }</div>
 </div>
   
    

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    margin: 10px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+
+}
+div.listcon{
+     /* margin: 10px auto; */
+    
+    
+}
+li{
+    list-style: none;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.active{
+    background-color: blue;
+}
